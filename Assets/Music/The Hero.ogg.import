@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://df6x0wisgovu5"
+path="res://.godot/imported/The Hero.ogg-57743e7c1209cdf2cc92fd037ee8d886.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/The Hero.ogg"
+dest_files=["res://.godot/imported/The Hero.ogg-57743e7c1209cdf2cc92fd037ee8d886.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dj7jeq8nnk3kv"
+path="res://.godot/imported/Oldschool Intro.mp3-e75a9cc294a7624ecdefcf26338405f7.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Oldschool Intro.mp3"
+dest_files=["res://.godot/imported/Oldschool Intro.mp3-e75a9cc294a7624ecdefcf26338405f7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

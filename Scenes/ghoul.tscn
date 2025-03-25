@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://bpf0itj3i8hrw"]
+
+[ext_resource type="Texture2D" uid="uid://c0yqr1mebswfe" path="res://Assets/Tilesheets/Transparent/creatures_transparent.png" id="1_1sxt1"]
+[ext_resource type="Script" path="res://Scripts/creatureAI.gd" id="1_k8135"]
+[ext_resource type="PackedScene" uid="uid://dguk5ig3vn63d" path="res://Scenes/killzone.tscn" id="2_5a8ns"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l551m"]
+atlas = ExtResource("1_1sxt1")
+region = Rect2(80, 60, 16, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xan60"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l551m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4wm2v"]
+size = Vector2(15, 19)
+
+[node name="Ghoul" type="Node2D"]
+script = ExtResource("1_k8135")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_xan60")
+
+[node name="Killzone" parent="." instance=ExtResource("2_5a8ns")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(1.5, -1.5)
+scale = Vector2(3, 3)
+shape = SubResource("RectangleShape2D_4wm2v")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+target_position = Vector2(52, 0)
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+target_position = Vector2(-55, 0)

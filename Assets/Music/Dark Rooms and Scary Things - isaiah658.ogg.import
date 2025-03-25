@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dgb0dwuqk63fr"
+path="res://.godot/imported/Dark Rooms and Scary Things - isaiah658.ogg-fb5a93a73412d3bb3d3bf96f0568f079.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/Music/Dark Rooms and Scary Things - isaiah658.ogg"
+dest_files=["res://.godot/imported/Dark Rooms and Scary Things - isaiah658.ogg-fb5a93a73412d3bb3d3bf96f0568f079.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
